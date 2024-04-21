@@ -10,7 +10,6 @@ const P = styled.p`
   line-height: 1;
   margin: 0;
   padding: 0;
-
   @media (max-width: 600px) {
     font-size: 40px;
   }

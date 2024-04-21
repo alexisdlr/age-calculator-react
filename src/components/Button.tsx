@@ -1,14 +1,14 @@
-import styled from 'styled-components'
-import Arrow from '../assets/images/icon-arrow.svg'
+import styled from "styled-components";
+import Arrow from "../assets/images/icon-arrow.svg";
 
 const Container = styled.div`
+  position: relative;
   display: flex;
   justify-content: between;
   align-items: center;
   width: 100%;
   margin: 4px 0;
   @media (max-width: 600px) {
-    position: relative;
     margin: 3rem 0;
   }
 `;
@@ -20,7 +20,7 @@ const Line = styled.div`
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #DCDCDC;
+    background-color: #dcdcdc;
   }
   @media (max-width: 600px) {
     position: absolute;
@@ -30,12 +30,12 @@ const Line = styled.div`
       display: block;
       width: 100%;
       height: 1px;
-      background-color: #DCDCDC;
+      background-color: #dcdcdc;
     }
   }
 `;
 const ButtonC = styled.button`
-  background-color: #854DFF;
+  background-color: #854dff;
   border: none;
   border-radius: 100%;
   padding: 1rem;
@@ -62,10 +62,7 @@ const ButtonC = styled.button`
   }
 `;
 
-
-const Button = ({calculateAge}: {
-  calculateAge: () => void
-}) => {
+const Button = ({ calculateAge }: { calculateAge: () => void }) => {
   return (
     <Container>
       <Line />
@@ -73,7 +70,7 @@ const Button = ({calculateAge}: {
         <img src={Arrow} alt="calculate" />
       </ButtonC>
     </Container>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

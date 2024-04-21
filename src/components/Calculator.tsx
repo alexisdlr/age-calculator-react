@@ -3,8 +3,10 @@ import styled from "styled-components";
 import Form from "./Form";
 import Results from "./Results";
 import Button from "./Button";
+import { motion } from "framer-motion";
 
-const Wrapper = styled.div`
+
+const Wrapper = styled(motion.div)`
   min-width: 600px;
   background-color: #fff;
   border-radius: 10px 10px 100px 10px;
@@ -46,7 +48,11 @@ const Calculator = () => {
     setDate({ ...date, [e.target.name]: parseInt(e.target.value) });
   };
   return (
-    <Wrapper>
+    <Wrapper
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 100 }}
+      transition={{ duration: 0.5 }}
+    >
       <Form onChange={handleChange} />
       <Button calculateAge={calculateAge} />
       <Results years={age.years} months={age.months} days={age.days} />
