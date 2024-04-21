@@ -9,7 +9,7 @@ const Container = styled.div`
   margin: 4px 0;
   @media (max-width: 600px) {
     position: relative;
-    margin: 2.5rem 0;
+    margin: 3rem 0;
   }
 `;
 

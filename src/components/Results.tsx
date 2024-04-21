@@ -23,6 +23,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  gap: 1rem;
 `;
 
 type Age = {
